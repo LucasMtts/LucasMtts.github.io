@@ -1,0 +1,455 @@
+:root {
+  --color-primary-: #7B00FF ;
+  --color-secondary-:#e6ceff ;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #e0e0e0;
+  font-family: 'Varela Round', sans-serif;
+}
+
+/*******************************************
+*                  HEADER
+*******************************************/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  background: white;
+  padding: 12px;
+  margin: 12px;
+  font-weight: bold;
+}
+
+.header img {
+  width: 50px;
+  height: 50px;
+}
+
+.header .logo {
+  position: absolute;
+  left: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 50px 0;
+  border-radius: 20px;
+  padding: 8px;
+  width: 80px;
+}
+
+.header .logo p {
+  color: var(--color-primary-);
+  font-size: 20px;
+  position: absolute;
+  top: -15px;
+  left: 0px;
+  background-color: var(--color-secondary-);
+  border-radius: 20px;
+  padding: 20px;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.header .logo:hover p {
+  opacity: 1;
+}
+
+.header .divisionPoint p {
+  font-weight: normal;
+  opacity: 0.4;
+  margin: 0;
+  font-size: 60px;
+  padding-bottom: 10px;
+}
+
+.header .headbuttons .buttondiv {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .headbuttons .buttondiv .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 15px;
+  width: 100px;
+  height: 80px;
+  border-radius: 20px;
+  text-decoration: none;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+
+.header .headbuttons .buttondiv .button .hiddenDescription {
+  opacity: 0;
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  border-radius: 20px;
+  cursor: arrow;
+  color: var(--color-primary-);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.header .headbuttons .buttondiv .button .hiddenDescription p {
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+.header .headbuttons .buttondiv .button:hover {
+  background-color: var(--color-secondary-);
+}
+
+.header .headbuttons .buttondiv .button:hover .hiddenDescription {
+  opacity: 1;
+  top: 130px;
+}
+
+/***************************************
+*               CONTENT
+***************************************/
+.content {
+  border-radius: 20px;
+  margin: 90px auto 20px auto;
+  background-color: white;
+  width: 80vw;
+  height: 70vh;
+}
+
+.content .container {
+  padding: 30px;
+}
+
+.content .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.content .home h1 {
+  color: var(--color-primary-);
+  font-size: 40px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--color-primary-);
+}
+
+.content .home p {
+  font-size: 20px;
+  color: var(--color-primary-);
+}
+
+.content .perfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.content .perfil h1 {
+  color: var(--color-primary-);
+  font-size: 40px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--color-primary-);
+}
+
+.content .perfil .perfilFlex {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .perfil .perfilFlex .profile {
+  color: var(--color-primary-);
+  padding-right: 30px;
+  border-right: 5px solid rgba(0, 0, 0, 0.2);
+}
+
+.content .perfil .perfilFlex .profile img {
+  border-radius: 100%;
+  border: 4px solid var(--color-primary-);
+  width: 60%;
+  height: 60%;
+}
+
+.content .perfil .perfilFlex .profileDescription {
+  padding-left: 30px;
+}
+
+.content .perfil .perfilFlex .profileDescription p {
+  color: var(--color-primary-);
+  font-size: 1.2rem;
+}
+
+.content .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.content .time h1 {
+  color: var(--color-primary-);
+  font-size: 40px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--color-primary-);
+}
+
+.content .time p {
+  color: var(--color-primary-);
+  font-size: 20px;
+}
+
+.content .bookmarks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.content .bookmarks h1 {
+  color: var(--color-primary-);
+  font-size: 40px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--color-primary-);
+}
+
+.content .bookmarks p {
+  color: var(--color-primary-);
+  font-size: 20px;
+}
+
+.content .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.content .contact h1 {
+  color: var(--color-primary-);
+  font-size: 40px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--color-primary-);
+}
+
+.content .contact p {
+  color: var(--color-primary-);
+  font-size: 20px;
+}
+
+.content .contact .contactLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content .contact .contactLinks .links {
+  border-radius: 100%;
+  background-color: white;
+  margin: 0;
+  padding: 20px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.content .contact .contactLinks .links:hover {
+  background-color: var(--color-secondary-);
+}
+
+.content .contact .contactLinks .links a {
+  height: 80px;
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content .contact .contactLinks .links a img {
+  width: 60px;
+  height: 60px;
+}
+
+@media (max-width: 850px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header {
+    display: block;
+  }
+  .header .logo {
+    display: none;
+  }
+  .header .divisionPoint {
+    display: none;
+  }
+  .header img {
+    height: 30px;
+    width: 30px;
+  }
+  .header .headbuttons .buttondiv {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .hiddenDescription {
+    display: none;
+  }
+  .content {
+    display: block;
+    position: relative;
+    width: 95vw;
+    height: 82vh;
+    margin: 10px;
+  }
+  .content h1 {
+    padding-top: 10px;
+    margin-bottom: 60px;
+  }
+  .content .container {
+    padding: 0;
+  }
+  .content .perfil h1 {
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+  .content .perfil .perfilFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content .perfil .perfilFlex .profile {
+    padding: 20px 0;
+    border-right: none;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+  }
+  .content .perfil .perfilFlex .profile img {
+    width: 40%;
+    height: 40%;
+  }
+  .content .perfil .perfilFlex .profileDescription {
+    padding: 20px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
