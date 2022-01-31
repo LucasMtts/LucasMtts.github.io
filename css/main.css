@@ -293,9 +293,35 @@ body {
   border-bottom: 3px solid var(--color-primary-);
 }
 
-.content .bookmarks p {
+.content .bookmarks span {
   color: var(--color-primary-);
   font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.content .bookmarks .favlinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .bookmarks .favlinks .linksbookmark {
+  background-color: var(--color-secondary-);
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px;
+}
+
+.content .bookmarks .favlinks .linksbookmark a {
+  padding: 5px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--color-primary-);
 }
 
 .content .contact {
